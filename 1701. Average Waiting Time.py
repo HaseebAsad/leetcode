@@ -16,3 +16,8 @@ class Solution(object):
             self.totalWaitTime += self.currentTime + cookTime - arrivalTime
             self.currentTime += cookTime
         return self.totalWaitTime / len(customers)
+
+"""
+Potential improvements:
+OOP is neither memory nor speed efficient. Consider not attaching attributes to the object to make more performant.
+"""
