@@ -7,10 +7,8 @@ class Solution:
             cnt = nums[i]
             if (cnt == k):
                     counter +=1
-            print("first count", cnt)
             for j in range(i+1, len(nums),1):
                 cnt += nums[j]
-                print("second count", cnt)
                 if (cnt == k):
                     counter +=1
             cnt = 0 #reset
